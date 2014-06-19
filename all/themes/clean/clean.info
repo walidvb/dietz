@@ -1,0 +1,41 @@
+name = Clean
+description = Clean theme provides a solid foundation on which you can a create a bespoke theme in the shortest possible time.
+core = 7.x
+
+screenshot = screenshot.png
+
+
+
+framework stylesheets[all][] = styles/clean.reset-browser.css
+
+stylesheets[all][] = styles/clean.reset-drupal.css
+stylesheets[all][] = styles/system.menus.css
+stylesheets[all][] = styles/clean.forms.css
+;stylesheets[all][] = styles/clean.layout.css
+stylesheets[all][] = styles/clean.typography.css
+stylesheets[all][] = styles/clean.content.css
+
+
+stylesheets[all][] = css/layout.css
+
+;scripts[] = js/utils.js
+;scripts[] = js/superframe.js
+
+;scripts[] = js/jquery.cycle.all.js
+
+scripts[] = js/mousetrap.min.js
+
+;scripts[] = js/jquery.slick.2.1.js
+
+
+
+
+
+
+
+; Information added by drupal.org packaging script on 2012-07-10
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "clean"
+datestamp = "1341922239"
+

@@ -1,0 +1,8 @@
+filename = "dieterdietz.org_2013-05-301440-2013-05-30T14-40-17"
+description = ""
+datestamp = "1369917620"
+generator = "Backup and Migrate (http://drupal.org/project/backup_migrate)"
+generatorversion = "7.x-2.x"
+sites[0][version] = "7.21"
+sites[0][name] = "dieterdietz.org"
+sites[0][url] = "http://dieterdietz.org/"

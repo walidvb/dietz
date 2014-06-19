@@ -1,0 +1,127 @@
+.panels-flexible-region {
+  padding: 0;
+}
+
+.panels-flexible-region-inside {
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+}
+
+.panels-flexible-region-inside-first {
+  padding-left: 0;
+}
+
+.panels-flexible-region-inside-last {
+  padding-right: 0;
+}
+
+.panels-flexible-column {
+  padding: 0;
+}
+
+.panels-flexible-column-inside {
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+}
+
+.panels-flexible-column-inside-first {
+  padding-left: 0;
+}
+
+.panels-flexible-column-inside-last {
+  padding-right: 0;
+}
+
+.panels-flexible-row {
+  padding: 0 0 0.5em 0;
+  margin: 0;
+}
+
+.panels-flexible-row-last {
+  padding-bottom: 0;
+}
+
+.panels-flexible-column-project_edit_page-main {
+  float: left;
+  width: 99.0000%;
+}
+
+.panels-flexible-project_edit_page-inside {
+  padding-right: 0px;
+}
+
+.panels-flexible-project_edit_page {
+  width: auto;
+}
+
+.panels-flexible-region-project_edit_page-top {
+  float: left;
+  width: 99.0000%;
+}
+
+.panels-flexible-row-project_edit_page-3-inside {
+  padding-right: 0px;
+}
+
+.panels-flexible-region-project_edit_page-left_0 {
+  float: left;
+  width: 15.8400%;
+}
+
+.panels-flexible-region-project_edit_page-left_1 {
+  float: left;
+  width: 14.8500%;
+}
+
+.panels-flexible-region-project_edit_page-center {
+  float: left;
+  width: 14.8500%;
+}
+
+.panels-flexible-region-project_edit_page-left_5 {
+  float: left;
+  width: 14.8500%;
+}
+
+.panels-flexible-region-project_edit_page-left_5_ {
+  float: left;
+  width: 14.8500%;
+}
+
+.panels-flexible-region-project_edit_page-left_5__ {
+  float: left;
+  width: 14.8500%;
+}
+
+.panels-flexible-region-project_edit_page-left_6 {
+  float: left;
+  width: 8.9100%;
+}
+
+.panels-flexible-row-project_edit_page-main-row-inside {
+  padding-right: 0px;
+}
+
+.panels-flexible-region-project_edit_page-left {
+  float: left;
+  width: 34.6500%;
+}
+
+.panels-flexible-region-project_edit_page-right {
+  float: left;
+  width: 64.3500%;
+}
+
+.panels-flexible-row-project_edit_page-1-inside {
+  padding-right: 0px;
+}
+
+.panels-flexible-region-project_edit_page-bottom {
+  float: left;
+  width: 99.0000%;
+}
+
+.panels-flexible-row-project_edit_page-2-inside {
+  padding-right: 0px;
+}
+
