@@ -283,11 +283,19 @@ $(document).bind('cycle-after', function(event, optionHash, outgoingSlideEl, inc
 		//List
 		$('.work-list-item').bind('click', function(){
 			$('body').addClass('list-closed');
+			setTimeout(removeHelper, 2500);
 			var nid = $(this).attr('data-nid');
 			var index = $('.miniframe[data-nid="'+nid+'"]').index();
 			superframe.cycle(index);
 		});
 
+		//Help
+		var helpClass = 'helper';
+		var helper = $('.'+helpClass);
+		function removeHelper(){
+			helper.addClass('helpout');
+		}
+		helper.click(removeHelper);
 		//resort projects on sort table
 		
 		//sort projects in views as well

@@ -44,6 +44,274 @@ html, body, #page-wrapper {
   overflow: auto;
 }
 
+/* TYPO FONTS */
+@font-face {
+  font-family: 'akzidenz';
+  src: url("../fonts/akzidenz-grotesk-roman-webfont.eot");
+  src: url("../fonts/akzidenz-grotesk-roman-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/akzidenz-grotesk-roman-webfont.woff") format("woff"), url("../fonts/akzidenz-grotesk-roman-webfont.ttf") format("truetype"), url("../fonts/akzidenz-grotesk-roman-webfont.svg#akzidenzgroteskregular") format("svg");
+  font-weight: light;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'akzidenz';
+  src: url("../fonts/akzidenz-grotesk-light-webfont.eot");
+  src: url("../fonts/akzidenz-grotesk-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/akzidenz-grotesk-light-webfont.woff") format("woff"), url("../fonts/akzidenz-grotesk-light-webfont.ttf") format("truetype"), url("../fonts/akzidenz-grotesk-light-webfont.svg#akzidenzgroteskregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'akzidenz';
+  src: url("../fonts/akzidenz-grotesk-black-webfont.eot");
+  src: url("../fonts/akzidenz-grotesk-black-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/akzidenz-grotesk-black-webfont.woff") format("woff"), url("../fonts/akzidenz-grotesk-black-webfont.ttf") format("truetype"), url("../fonts/akzidenz-grotesk-black-webfont.svg#akzidenzgroteskregular") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body.html {
+  font-family: akzidenz, Helvetica, sans-serif;
+  font-size: 16px;
+  background-color: white;
+}
+
+.page-studio #page, .page-node-64 #page {
+  padding-top: 60px;
+}
+
+/* MISC */
+#main-menu :not(.first) a {
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+#promo-wrapper {
+  -webkit-transition: all 0.8s 0.05s;
+  -moz-transition: all 0.8s 0.05s;
+  -o-transition: all 0.8s 0.05s;
+  transition: all 0.8s 0.05s;
+}
+
+#footer {
+  -webkit-transition: all 0.8s 0.1s;
+  -moz-transition: all 0.8s 0.1s;
+  -o-transition: all 0.8s 0.1s;
+  transition: all 0.8s 0.1s;
+}
+
+#highlighted {
+  position: fixed;
+  top: 0px;
+  right: 50px;
+  z-index: 250;
+  text-align: right;
+}
+
+#highlighted a {
+  text-indent: 9999px;
+  background-image: url("../img/home.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto auto;
+  width: 50px;
+  height: 50px;
+}
+
+#highlighted li {
+  list-style: none;
+  margin-top: 0px;
+}
+
+/* MAIN MENU */
+/* HACK *
+.menu-581{
+	position: relative;
+	left: -3px;
+}
+/* /HACK */
+#main-menu {
+  width: 32%;
+  padding: 0 0.5%;
+  position: fixed;
+  z-index: 150;
+  font-weight: bolder;
+  left: 16%;
+  min-width: 360px;
+}
+
+#main-menu a, #highlighted a {
+  display: inline-block;
+  position: relative;
+}
+
+#main-menu .first {
+  display: inline-block;
+  top: -10px;
+  margin-right: 24%;
+  position: relative;
+}
+
+#main-menu li {
+  margin: 0px;
+  width: 24.5%;
+  display: inline-block;
+}
+
+#main-menu :not(.first) a, #highlighted a {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 1px;
+  font-size: smaller;
+  display: inline-block;
+  padding: 1em 0px 0px 5px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  width: 70%;
+  margin: 0 0.5%;
+  color: white;
+  text-decoration: none;
+}
+
+#main-menu .first a {
+  height: 2em;
+  background-image: url("../img/logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-indent: -9999px;
+  width: 100%;
+}
+
+#main-menu .first a.active, #main-menu .first a:hover {
+  background-image: url("../img/logo_green.png");
+  /*background-position: 0px -38px;*/
+}
+
+#highlighted .leaf a {
+  width: 50px;
+}
+
+#main-menu :not(.first) a.active, #main-menu :not(.first) a:hover, #highlighted .leaf a:hover {
+  background-color: rgba(0, 255, 0, 0.8) !important;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+#main-menu ul.menu, #main-menu.block-menu {
+  margin-bottom: 0;
+}
+
+/* /MAIN MENU */
+#promo-wrapper, #footer {
+  color: black;
+  font-size: smaller;
+  z-index: 150;
+}
+
+/* PROMO-WRAPPER */
+#promo-wrapper, #promo-wrapper:hover {
+  position: fixed;
+  top: 320px;
+  height: 20px;
+  right: 0px;
+  padding: 8px 8px 2px 5px;
+  display: block;
+  -webkit-transform: rotate(90deg);
+  -webkit-transform-origin: 100% 10%;
+  /* Safari and Chrome */
+  -moz-transform: rotate(90deg);
+  -moz-transform-origin: 100% 10%;
+  /* FF */
+  -o-transform: rotate(90deg);
+  -o-transform-origin: 100% 10%;
+  /* Opera */
+  transform: rotate(90deg);
+  transform-origin: 100% 10%;
+  /* generic */
+}
+
+/* FOOTER */
+#footer, #footer:hover {
+  display: inline-block;
+  position: fixed;
+  bottom: 0px;
+  height: 40px;
+  left: 16%;
+  font-weight: bold;
+  padding: 8px 10px 0px 10px;
+  width: 32%;
+}
+
+#footer a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+#footer a:hover {
+  text-decoration: underline;
+}
+
+#footer a:hover, #main-menu a:hover, #highlighted a:hover, .clean #main-menu :not(.first) a {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.left-footer, .right-footer {
+  display: inline-block;
+  width: 49%;
+  margin: 0%;
+}
+
+@media only screen and (max-device-width: 380px) {
+  #main-menu {
+    width: 100%;
+    padding: 0 28px;
+    left: auto;
+    min-width: auto;
+  }
+
+  #main-menu .first {
+    top: 0px;
+    margin-right: 65px;
+    width: 18%;
+  }
+
+  #main-menu li {
+    margin: 0px;
+    width: 15%;
+    margin-right: 10px;
+  }
+
+  #main-menu :not(.first) a, #highlighted a {
+    font-size: x-small;
+    padding: 1em 0px 0px 5px;
+    width: 100%;
+    margin: 0 0.5%;
+  }
+
+  #main-menu .first a {
+    height: 2em;
+    width: 100%;
+  }
+
+  #footer, #footer:hover {
+    padding-left: 28px;
+    width: 100%;
+    font-size: xx-small;
+    height: auto;
+    left: auto;
+  }
+
+  #footer .block {
+    margin-bottom: 0px;
+  }
+}
 html, body, .view-main, .view-main .view-content, .view-main .views-row, .proj-wrapper, .proj-wrapper > div {
   height: 100%;
   width: 100%;
@@ -412,6 +680,38 @@ div.img-loading {
 }
 /* /PROJECT INFO */
 /* ARROWS */
+@media (min-width: 767px) {
+  .helper {
+    transition: all 0.6s ease-out;
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 101;
+  }
+  .helper:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: inherit;
+    content: url("../img/keyboard.png");
+    max-height: 50px;
+    z-index: 103;
+    max-width: 155px;
+    margin: auto;
+    cursor: pointer;
+  }
+  .helper.helpout {
+    top: -100%;
+    bottom: 100%;
+  }
+}
 .nav {
   position: fixed;
   z-index: 100;
@@ -421,34 +721,28 @@ div.img-loading {
   text-shadow: 1px 1px 5px black;
   text-indent: -9999px;
 }
-
-.arrow {
+.nav.arrow {
   background-image: url("../img/arrow_sprite.png");
   background-position: 0px -33px;
   background-repeat: no-repeat;
   background-size: auto;
 }
-
 :not(.mobile) .nav:hover {
   background-position: 0px 1px;
   cursor: pointer;
 }
-
-.nav-horz {
+.nav.nav-horz {
   top: 50%;
   -moz-transition: opacity 0.2s;
 }
-
-.hidden.nav-horz {
+.hidden .nav.nav-horz {
   opacity: 0;
   visibility: hidden;
 }
-
-.nav-vert {
+.nav.nav-vert {
   left: 50%;
 }
-
-#up {
+.nav#up {
   top: 28px;
   -moz-transform: rotatez(90deg);
   -ms-transform: rotatez(90deg);
@@ -456,8 +750,7 @@ div.img-loading {
   -webkit-transform: rotatez(90deg);
   transform: rotatez(90deg);
 }
-
-#down {
+.nav#down {
   bottom: 28px;
   -moz-transform: rotatez(-90deg);
   -ms-transform: rotatez(-90deg);
@@ -465,12 +758,10 @@ div.img-loading {
   -webkit-transform: rotatez(-90deg);
   transform: rotatez(-90deg);
 }
-
-#left {
+.nav#left {
   left: 28px;
 }
-
-#right {
+.nav#right {
   right: 28px;
   -moz-transform: rotatez(180deg);
   -ms-transform: rotatez(180deg);
