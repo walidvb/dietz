@@ -56,7 +56,7 @@ body.page-projects{
 /* /CLEAN */
 /* WORKS LIST */
 
-#header{
+.page-projects #header{
 	width: 98%;
 	height: 100%;
 	top: 65px;
@@ -81,7 +81,7 @@ body.page-projects{
 		width: 100%;
 	}
 }
-.list-closed #header{
+.page-projects.list-closed #header{
 	top: -100%;
 }
 
@@ -270,7 +270,6 @@ div.img-loading{
 
 .proj-title{
 	font-size: x-large;
-	display: inline-block;
 }
 
 .proj-body{
@@ -376,7 +375,6 @@ and (max-width : 1024px) {
 
 /* ARROWS */
 .nav{
-	
 	position:fixed;
 	z-index: 100;
 	display: inline-block;

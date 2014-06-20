@@ -7,6 +7,6 @@ html, body, #page-wrapper{
 }
 
 #page-wrapper{
-	-webkit-overflow-scrolling: touch
+	-webkit-overflow-scrolling: touch;
 	overflow: auto;
 }

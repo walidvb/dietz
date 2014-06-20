@@ -30,37 +30,31 @@ function clean_preprocess_html(&$variables) {
   
   drupal_add_html_head($meta, 'meta');
   $path = explode('/', current_path());
-
   global $user;
   if($user->uid != 0)
   {
 	  drupal_add_css(drupal_get_path('theme', 'clean') . '/css/admin.css');
   }
+  drupal_add_css(drupal_get_path('theme', 'clean') . '/css/styles.css');
   if($path[0] == 'projects')
   {
-  	drupal_add_js(drupal_get_path('theme', 'clean') . '/js/jquery.cycle2.min.js');
-	  drupal_add_js(drupal_get_path('theme', 'clean') . '/js/jquery.cycle2.scrollVert.min.js');
-	  drupal_add_js(drupal_get_path('theme', 'clean') . '/js/jquery.cycle2.swipe.min.js');
-	  drupal_add_js(drupal_get_path('theme', 'clean') . '/js/superframe.js');
-	  drupal_add_js(drupal_get_path('theme', 'clean') . '/js/ui.js');
-	  drupal_add_js(drupal_get_path('theme', 'clean') . '/js/jquery.zoom.js');
-	  drupal_add_js(drupal_get_path('theme', 'clean') . '/js/jquery.tipsy.js');
-	  drupal_add_css(drupal_get_path('theme', 'clean') . '/css/tipsy.css');
-	  drupal_add_css(drupal_get_path('theme', 'clean') . '/css/functionnality.css');
-	  drupal_add_css(drupal_get_path('theme', 'clean') . '/css/projects.css');
-    drupal_add_css(drupal_get_path('theme', 'clean') . '/css/styles.css');
+    drupal_add_js(drupal_get_path('theme', 'clean') . '/js/jquery.cycle2.min.js');
+    drupal_add_js(drupal_get_path('theme', 'clean') . '/js/jquery.cycle2.scrollVert.min.js');
+    drupal_add_js(drupal_get_path('theme', 'clean') . '/js/jquery.cycle2.swipe.min.js');
+    drupal_add_js(drupal_get_path('theme', 'clean') . '/js/superframe.js');
+    drupal_add_js(drupal_get_path('theme', 'clean') . '/js/ui.js');
+    drupal_add_js(drupal_get_path('theme', 'clean') . '/js/jquery.zoom.js');
+    drupal_add_js(drupal_get_path('theme', 'clean') . '/js/jquery.tipsy.js');
+    drupal_add_css(drupal_get_path('theme', 'clean') . '/css/tipsy.css');
+    drupal_add_css(drupal_get_path('theme', 'clean') . '/css/functionnality.css');
+    drupal_add_css(drupal_get_path('theme', 'clean') . '/css/projects.css');
 	  drupal_add_js(drupal_get_path('theme', 'clean') . '/js/jquery.tinysort.min.js');
 	  $variables['scriptNeeded'] = true;
   }
-  else if($path[0] == 'studio')
-  {
-	  drupal_add_css(drupal_get_path('theme', 'clean') . '/css/studio.css');
-	  $variables['scriptNeeded'] = false;
-  }
   else
   {
-	  drupal_add_css(drupal_get_path('theme', 'clean') . '/css/landing.css');
-	  $variables['scriptNeeded'] = false;
+    $variables['attributes_array']['class'][] = 'text-page';
+    $variables['scriptNeeded'] = false;
   }
   drupal_add_js('jQuery(document).ready(function(){Mousetrap.bind("l o g", function(){window.location = Drupal.settings.basePath + "user"}); if(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)){jQuery("body").addClass("mobile")}})', 'inline');
   // Switch the doctype to one that works better for RDF if the module is
