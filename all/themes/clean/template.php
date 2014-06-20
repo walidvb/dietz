@@ -23,12 +23,10 @@ function clean_image_style($vars){
 		$style_path = image_style_url('fullscreen', $vars['path']);
 		$small_path = image_style_url('project_first_load', $vars['path']);
 		$mobile_path = image_style_url('mobile', $vars['path']);
-		$mobile_zoom = image_style_url('mobile_zoom', $vars['path']);
-		$zoom_path = image_style_url('zoom_image', $vars['path']);
 		$background = ($vars['style_name'] == 'more_imgs') ? "" : ", url('$small_path')";
 		$backed  = ($vars['style_name'] == 'fullscreen') ? "bcked" : "";
 
-		$return = "<div class=\"zoom-placeholder slide img-loading $backed\" data-small-src=\"$small_path\" data-src-mobile=\"$mobile_path\" data-src-zoom=\"$path\"  data-src-zoom-mobile=\"$mobile_zoom\" style=\"background-image:url('$loading') $background\">";
+		$return = "<div class=\"zoom-placeholder slide img-loading $backed\" data-small-src=\"$small_path\" data-src-mobile=\"$mobile_path\" style=\"background-image:url('$loading') $background\">";
 		$return .=  l('', $style_path, array('html' => 'true', 'attributes' => array(
 																		'class' => 'link-to-img', 
 																		'width' => '100%',
