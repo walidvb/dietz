@@ -349,9 +349,6 @@ $(document).bind('cycle-after', function(event, optionHash, outgoingSlideEl, inc
     Mousetrap.bind('i', toggleInfo);
 
 
-
-
-
 	//EOBEHAVIOR	
 }
 };
