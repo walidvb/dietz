@@ -117,29 +117,30 @@ body.page-projects{
 		font-weight: inherit;
 	}
 	/*headers*/
-	.work-table .sort div{
-		display: inline-block;
-		text-indent: -10000px;
-		width: 10px;
-		height: 10px;
-		background-color: black;
-		border-radius: 50%;
-		-webkit-border-radius: 50%;
-		-moz-border-radius: 50%;
-		-o-border-radius: 50%;
+	.work-table .sort{
 		cursor: pointer;
-	}
-	.work-table .sort.active div{
-		background-color: rgb(0,255,0);
-	}
-	body:not(.mobile) .work-table .sort div:hover{
-		background-color: #00FF00;
+		div{
+			display: inline-block;
+			text-indent: -10000px;
+			width: 10px;
+			height: 10px;
+			background-color: black;
+			border-radius: 50%;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			-o-border-radius: 50%;
+		}
+		&.active div{
+			background-color: rgb(0,255,0);
+		}
+		body:not(.mobile) &:hover div{
+			background-color: #00FF00;
+		}
 	}
 	
 	.work-table td{
 		padding-left: 0px;
 		padding-bottom: 0px;
-		/*height: 14px;*/
 	}
 	/* /work row */
 	

@@ -142,7 +142,7 @@ jQuery.fn.replace = function()
 				    	{
 				    		$('.miniframe:last .img-loading:first').replace();
 				    	}
-				    	
+
 				    }, 900);
 		    }
 	    	else //if miniframe
@@ -189,7 +189,7 @@ $(document).bind('cycle-after', function(event, optionHash, outgoingSlideEl, inc
 				else
 				{
 					right.add(left).removeClass('hidden');
-					
+
 				};
 			}
 		});
@@ -250,30 +250,11 @@ $(document).bind('cycle-after', function(event, optionHash, outgoingSlideEl, inc
 		var nav = up.add(down).add(left).add(right);
 		if(mobile == "")
 		{
-			nav.tipsy({
-				title: function(){
-					var tip = 'Tip: try using the keyboard arrows!';
-					return tip;
-				},
-				gravity: $.fn.tipsy.autoNS,
-				trigger: 'manual',	
-				offset: 5, 			 
-			})
-			.on('mouseenter.tip', function(){
-				$(this).tipsy("show")
-				.on('mouseleave', function(){
-					var $this = $(this);
-					setTimeout(function(){
-						$this.tipsy("hide")
-					}, 1000);
-					nav.off('mouseenter.tip');
 
-				});
-			})		
 		}		
 		nav.add(info).appendTo($('body'));
 
-		
+
 		//miniframes
 		var opts = {
 			timeout: 0,
@@ -298,10 +279,9 @@ $(document).bind('cycle-after', function(event, optionHash, outgoingSlideEl, inc
 		
 		superframe = $('.superframe .view-content').cycle(superopts);
 		
-		
+
 		//List
 		$('.work-list-item').bind('click', function(){
-			console.log('work-list-item clicked');
 			$('body').addClass('list-closed');
 			var nid = $(this).attr('data-nid');
 			var index = $('.miniframe[data-nid="'+nid+'"]').index();
@@ -353,7 +333,7 @@ $(document).bind('cycle-after', function(event, optionHash, outgoingSlideEl, inc
 		//bind key events (rest is bound on init)
 		Mousetrap.bind('left', left_);
 		Mousetrap.bind('right', right_);
-		
+
     //bind arrows
     left.once('sfed', function(){$(this).on('click.nav', left_)});
     right.once('sfed', function(){$(this).on('click.nav', right_)});
@@ -362,8 +342,8 @@ $(document).bind('cycle-after', function(event, optionHash, outgoingSlideEl, inc
 
 
 
-    
-    
+
+
 	//EOBEHAVIOR	
 }
 };
