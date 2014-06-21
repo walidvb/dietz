@@ -435,7 +435,7 @@ and (max-width : 1024px) {
 		-moz-transition: opacity 0.2s;
 	}
 
-	.hidden &.nav-horz{
+	&.hidden.nav-horz{
 		opacity: 0;
 		visibility: hidden;
 	}

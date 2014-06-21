@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/dietz/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>http://dieterdietz.org/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
 <url><loc>http://dieterdietz.org/projects%2523interieurs-lemaniques</loc><lastmod>2014-06-19T15:49Z</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
 <url><loc>http://dieterdietz.org/projects%2523passagen</loc><lastmod>2014-06-04T15:12Z</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
-<url><loc>http://dieterdietz.org/projects%2523chigny</loc><lastmod>2014-06-18T13:22Z</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>http://dieterdietz.org/projects%2523chigny</loc><lastmod>2014-06-18T13:22Z</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
 <url><loc>http://dieterdietz.org/projects%2523voliere</loc><lastmod>2014-06-04T15:10Z</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
 <url><loc>http://dieterdietz.org/node/110</loc><lastmod>2014-02-07T10:18Z</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
 <url><loc>http://dieterdietz.org/node/64</loc><lastmod>2014-06-10T18:37Z</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
 <url><loc>http://dieterdietz.org/projects%23hawa</loc><lastmod>2013-11-18T13:15Z</lastmod><changefreq>yearly</changefreq><priority>1.0</priority></url>
-<url><loc>http://dieterdietz.org/node/69</loc><lastmod>2013-09-18T13:27Z</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
-<url><loc>http://dieterdietz.org/node/70</loc><lastmod>2013-09-18T13:28Z</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+<url><loc>http://dieterdietz.org/node/69</loc><lastmod>2014-06-20T07:38Z</lastmod><changefreq>daily</changefreq><priority>0.3</priority></url>
+<url><loc>http://dieterdietz.org/node/70</loc><lastmod>2014-06-20T07:38Z</lastmod><changefreq>daily</changefreq><priority>0.3</priority></url>
 <url><loc>http://dieterdietz.org/projects%23overflow</loc><lastmod>2014-01-06T06:50Z</lastmod><changefreq>yearly</changefreq><priority>1.0</priority></url>
 <url><loc>http://dieterdietz.org/projects%23brn</loc><lastmod>2013-11-18T13:18Z</lastmod><changefreq>yearly</changefreq><priority>1.0</priority></url>
-<url><loc>http://dieterdietz.org/node/80</loc><lastmod>2013-09-18T13:29Z</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+<url><loc>http://dieterdietz.org/node/80</loc><lastmod>2014-06-20T07:38Z</lastmod><changefreq>daily</changefreq><priority>0.3</priority></url>
 <url><loc>http://dieterdietz.org/projects%23haush2</loc><lastmod>2013-11-18T13:11Z</lastmod><changefreq>yearly</changefreq><priority>1.0</priority></url>
 <url><loc>http://dieterdietz.org/projects%23halle</loc><lastmod>2013-11-06T09:36Z</lastmod><changefreq>yearly</changefreq><priority>1.0</priority></url>
 <url><loc>http://dieterdietz.org/projects%23ville</loc><lastmod>2013-11-06T10:48Z</lastmod><changefreq>yearly</changefreq><priority>1.0</priority></url>

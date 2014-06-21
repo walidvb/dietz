@@ -735,7 +735,7 @@ div.img-loading {
   top: 50%;
   -moz-transition: opacity 0.2s;
 }
-.hidden .nav.nav-horz {
+.nav.hidden.nav-horz {
   opacity: 0;
   visibility: hidden;
 }
