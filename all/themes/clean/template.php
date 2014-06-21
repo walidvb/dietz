@@ -42,11 +42,6 @@ function clean_image_style($vars){
 	return theme_image_style($vars);
 }
 
-//function to add all attributes
-function _add_attrs(&$vars){
-
-}
-
 /*
 * Implementation of hook_form_FORM_ID_alter
 * 
