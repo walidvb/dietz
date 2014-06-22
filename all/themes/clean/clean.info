@@ -16,16 +16,9 @@ stylesheets[all][] = styles/clean.typography.css
 stylesheets[all][] = styles/clean.content.css
 
 
+stylesheets[all][] = css/styles.css
 stylesheets[all][] = css/layout.css
-
-;scripts[] = js/utils.js
-;scripts[] = js/superframe.js
-
-;scripts[] = js/jquery.cycle.all.js
-
 scripts[] = js/mousetrap.min.js
-
-;scripts[] = js/jquery.slick.2.1.js
 
 
 

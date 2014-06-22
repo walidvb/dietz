@@ -35,7 +35,6 @@ function clean_preprocess_html(&$variables) {
   {
 	  drupal_add_css(drupal_get_path('theme', 'clean') . '/css/admin.css');
   }
-  drupal_add_css(drupal_get_path('theme', 'clean') . '/css/styles.css');
   if($path[0] == 'projects')
   {
     drupal_add_js(drupal_get_path('theme', 'clean') . '/js/jquery.cycle2.min.js');
