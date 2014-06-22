@@ -563,9 +563,8 @@ div.img-loading {
 .proj-info a:hover {
   text-decoration: underline;
 }
-
 .closed .proj-info, .clean .proj-info {
-  left: -33.5%;
+  left: -34%;
 }
 
 .proj-header {

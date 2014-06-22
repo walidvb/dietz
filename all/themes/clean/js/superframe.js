@@ -355,7 +355,7 @@ $(document).bind('cycle-after', function(event, optionHash, outgoingSlideEl, inc
 
     //bind mousewheel
     superframe.on('mousewheel', wheelMove);
-
+    $('.proj-info').on('mousewheel', function(e){e.stopPropagation();})
     function wheelMove(e, deltaY) {
     	//superframe.unbind('mousewheel', wheelMove);
     	var threshold = 0;

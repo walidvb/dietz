@@ -2,7 +2,7 @@
 
 	$aliases['dev'] = array(
 	  'root' => '/Users/Gaston/Sites/dietz',
-	  'uri'  => 'http://localhost/dietz',
+	  'uri'  => 'http://localhost',
 	  'path-aliases' => array(
     '%files' => 'sites/default/files',
     '%mod' => 'sites/all/modules',

@@ -253,11 +253,11 @@ div.img-loading{
 			text-decoration: underline;
 		}
 	}
+	.closed &, .clean &{
+		left: -34%;
+	}
 }
 
-.closed .proj-info, .clean .proj-info{
-	left: -33.5%;
-}
 .proj-header{
 	position: relative;
 	/*top: -2.3em;*/
