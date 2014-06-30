@@ -60,8 +60,8 @@ jQuery.fn.replace = function()
 			attach: function (context, settings) {
     	//disable cycle logging
     	$.fn.cycle.log = $.noop;
-	       	//move superframe to top level
-	       	$('.superframe').appendTo('body');
+     	//move superframe to top level
+     	$('.superframe').appendTo('body');
     	//init currFrame
     	currFrame = $('.miniframe:first .proj-wrapper');
 
@@ -114,6 +114,7 @@ jQuery.fn.replace = function()
     	//load further images
     	$(document).bind('cycle-before', function(event, optionHash, outgoingSlideEl, incoming, ff){
 		    //cancel whatever had been scheduled
+
 		    //if this is superframe
 		    if(event.target.className == "view-content")
 		    {
@@ -250,7 +251,7 @@ $(document).bind('cycle-after', function(event, optionHash, outgoingSlideEl, inc
 		var down = $('<div id="down" class="nav arrow nav-vert">down</div>');
 		var left = $('<div id="left" class="nav arrow nav-horz hidden">left</div>');
 		var right = $('<div id="right" class="nav arrow nav-horz">right</div>');
-		var info = $('<div id="info-trigger" class="nav">+</div>');
+		var info = $('<div id="info-trigger" class="nav"></div>');
 		
 		var nav = up.add(down).add(left).add(right);
 		if(mobile == "")
@@ -359,22 +360,22 @@ $(document).bind('cycle-after', function(event, optionHash, outgoingSlideEl, inc
     function wheelMove(e, deltaY) {
     	//superframe.unbind('mousewheel', wheelMove);
     	var threshold = 0;
-    	if(new Date() - lastTime > 1000)
+    	if(new Date() - lastTime > 900)
     	{
     		lastTime = new Date();
-    		if (e.deltaY > threshold) {
-    			up_(e);
-    			return;
-    		}
-    		else if (e.deltaY < -threshold) {
-    			down_(e);
-    			return;
-    		}
     		if(e.deltaX < threshold){
     			left_(e);
+    			return;
     		}
     		else if(e.deltaX > threshold){
     			right_(e);
+    			return;
+    		}
+    		if (e.deltaY > threshold) {
+    			up_(e);
+    		}
+    		else if (e.deltaY < -threshold) {
+    			down_(e);
     		}
     	}
     }

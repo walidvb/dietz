@@ -33,5 +33,4 @@ xmlrpc.php
 /modules
 /profiles
 /scripts
-/themesdefault/private/backup_migrate
-default/private/backup_migrate/*
+/themes

@@ -4,10 +4,11 @@
 		margin-bottom: 15px;
 		h2, .people-title, .people-desc{
 			line-height: 1.42;
-			font-size: $font-size;
+			font-size: $big-font;
+			font-weight: bold;
 		}
 		h2, .people-title{
-			font-size: $font-size;
+			
 			float: left;
 			margin: 0;
 		}
