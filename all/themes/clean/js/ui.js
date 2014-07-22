@@ -55,6 +55,41 @@
 				}
 			}
 		}
+		else
+		{	    	
+		    //Zoom
+		    var ready_ = function(img){
+		    	//add loading
+		    	var original = $(this).siblings('a, img, div');
+		    	original.removeClass('zoom-loading');
+		    	$('.zoomImg').trigger('mouseenter');
+		    	$('body').addClass('clean');
+			    //bind click to remove zoom
+			    $(this).bind('click', function(e){
+			    	e.stopPropagation();
+			    	$(this).fadeOut(function(){
+			    		$(this).remove();
+			    		$('body').removeClass('clean');
+			    	})
+			    });
+			    $(this).bind('contextmenu', function(){return false;});
+			  };
+
+			  $('.proj-wrapper .zoom-placeholder')
+			  .bind('click.zoom', function(e){
+			  	e.preventDefault();
+			  	$('body').addClass('list-closed');
+			  	var attr = (mobile !== "") ? 'data-src-zoom' : 'data-src-zoom-mobile';
+			  	var url_ = $(this).attr(attr);
+			  	$('a, img, div',$(this)).addClass('zoom-loading');
+			  	$(this).zoom({
+			  		url: url_,
+			  		grab: false,
+			  		icon: false,
+			  		callback: ready_
+			  	});
+			  });
+			}
 	    //EOattach	
 	  }
 	};
