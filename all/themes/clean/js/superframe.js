@@ -174,29 +174,9 @@ jQuery.fn.replace = function()
 
 $(document).bind('cycle-after', function(event, optionHash, outgoingSlideEl, incoming, forwardFlag)		{
 			//if this is superframe
-
 			if(event.target.className == "view-content")
 			{	
 				$('body').removeClass('in-transit');
-				left.addClass('hidden');
-				right.removeClass('hidden');
-			}
-			else
-			{
-				//hide arrows when on edge
-				if(optionHash.slideNum == optionHash.slideCount)
-				{
-					right.addClass('hidden');
-				}
-				else if(optionHash.slideNum == 1)
-				{
-					left.addClass('hidden');
-				}
-				else
-				{
-					right.add(left).removeClass('hidden');
-
-				};
 			}
 		});
 
