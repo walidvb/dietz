@@ -264,7 +264,7 @@ div.img-loading{
 		left: -34%;
 	}
 }
-
+$margin: 10px;
 .proj-header{
 	position: relative;
 	/*top: -2.3em;*/
@@ -278,19 +278,28 @@ div.img-loading{
 
 .proj-title{
 	font-size: x-large;
+	margin-bottom: $margin;
 }
 
 .proj-body{
 	overflow: auto;
 	-webkit-overflow-scrolling: touch;
 	position: absolute;
-	top:100px;
+	top:100px+2*$margin;
 	bottom: 65px;
 	padding: 0px 10px 0px 0px;
 	transition: all 0.4s ease-in-out;
 	-webkit-transition: all 0.4s ease-in-out;
 	-moz-transition: all 0.4s ease-in-out;
 	-o-transition: all 0.4s ease-in-out;
+	.proj-desc-body{
+		.green{
+			color: $brand;
+		}
+		p{
+			margin-bottom: $margin;
+		}
+	}
 }
 
 @media only screen  
@@ -422,7 +431,7 @@ and (max-width : 1024px) {
 	position:fixed;
 	z-index: 100;
 	display: inline-block;
-	height: 35px;
+	height: 27px;
 	width: 35px;
 	text-shadow:1px 1px 5px black;
 	text-indent: -9999px;
@@ -456,11 +465,11 @@ and (max-width : 1024px) {
 	}
 
 	&#up{
-		top:28px;
+		top:8px;
 	}
 
 	&#down{
-		bottom:28px;
+		bottom:8px;
 		-moz-transform: rotatez(-180deg);
 		-ms-transform: rotatez(-180deg);
 		-o-transform: rotatez(-180deg);
@@ -469,7 +478,7 @@ and (max-width : 1024px) {
 	}
 
 	&#left{
-		left: 28px;
+		left: 8px;
 		-moz-transform: rotatez(-90deg);
 		-ms-transform: rotatez(-90deg);
 		-o-transform: rotatez(-90deg);
@@ -478,7 +487,7 @@ and (max-width : 1024px) {
 	}
 
 	&#right{
-		right: 28px;
+		right: 8px;
 		-moz-transform: rotatez(90deg);
 		-ms-transform: rotatez(90deg);
 		-o-transform: rotatez(90deg);

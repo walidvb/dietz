@@ -32,3 +32,10 @@ vertical-align: middle;
 	border-radius: 5px;
 	margin: 10px
 }
+
+textarea{
+	font-family: akzidenz, Helvetica, sans-serif; 
+}
+.green{
+	color: #00FF00;
+}
