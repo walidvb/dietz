@@ -45,7 +45,7 @@
  $data = '';
 	foreach($sortable as $key => $value)
 	{
-		$value = str_replace(' ', '-', $value);
+		$value = strtolower(str_replace(' ', '-', $value));
 		$data .= " data-$key=\"$value\"";
 	}
 ?>	

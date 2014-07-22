@@ -395,7 +395,7 @@ body.page-projects {
 
 /* work row */
 .work-table {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
   /*headers*/
 }
@@ -513,6 +513,15 @@ div.img-loading {
 
 .closed .proj-wrapper .zoom-placeholder, .closed .proj-wrapper .img-final {
   left: 0%;
+}
+
+.team-footer {
+  color: lime !important;
+  text-transform: uppercase;
+  visibility: hidden;
+}
+.alice .team-footer {
+  visibility: visible;
 }
 
 /* /IMAGES */

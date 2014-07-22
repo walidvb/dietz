@@ -87,7 +87,7 @@ body.page-projects{
 
 	/* work row */
 	.work-table{
-		font-size: 20px;
+		font-size: 16px;
 		font-weight: bold;
 		& thead{
 			background-color: white;
@@ -211,6 +211,15 @@ div.img-loading{
 	left: 0%;
 }
 
+
+.team-footer{
+	color: $brand!important;
+	text-transform: uppercase;
+	visibility: hidden;
+	.alice &{
+		visibility: visible;
+	}
+}
 /* /IMAGES */
 
 /* PROJECT INFO */

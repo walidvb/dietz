@@ -58,6 +58,7 @@ jQuery.fn.replace = function()
 
 		Drupal.behaviors.superframe = {
 			attach: function (context, settings) {
+			var teamClass = "alice";
     	//disable cycle logging
     	$.fn.cycle.log = $.noop;
      	//move superframe to top level
@@ -121,6 +122,13 @@ jQuery.fn.replace = function()
 			    //activate project in list
 			    currMiniframe = 0;
 			    $('.active-proj').removeClass('active-proj');
+
+			    teamClass = outgoingSlideEl.attributes["data-team"].value;
+			    var oldTeamClass = incoming.attributes["data-team"].value;
+			    if(teamClass != oldTeamClass)
+			    {
+			    	$('body').removeClass(teamClass);
+			    }
 			    var nid = $(incoming).data('nid');
 			    $('.work-list-item[data-nid=' + nid + ']').addClass('active-proj');
 			    var c = currFrame;
@@ -176,7 +184,8 @@ $(document).bind('cycle-after', function(event, optionHash, outgoingSlideEl, inc
 			//if this is superframe
 			if(event.target.className == "view-content")
 			{	
-				$('body').removeClass('in-transit');
+				teamClass = incoming.attributes["data-team"].value
+				$('body').removeClass('in-transit').addClass(teamClass);
 			}
 		});
 
@@ -194,7 +203,8 @@ $(document).bind('cycle-after', function(event, optionHash, outgoingSlideEl, inc
 				 	}
 				 }, 800);
 				 initialPageLoad = false;
-
+				 teamClass = optionHash.slides[optionHash.currSlide].attributes['data-team'].value;
+				 $('body').addClass(teamClass);
 				 var initialSlide = optionHash.currSlide;
 				 $('.work-list-item').eq(initialSlide).addClass('active-proj');
 
@@ -229,15 +239,11 @@ $(document).bind('cycle-after', function(event, optionHash, outgoingSlideEl, inc
 		//Create listeners and attach them to DOM
 		var up = $('<div id="up" class="nav arrow nav-vert">up</div>');
 		var down = $('<div id="down" class="nav arrow nav-vert">down</div>');
-		var left = $('<div id="left" class="nav arrow nav-horz hidden">left</div>');
+		var left = $('<div id="left" class="nav arrow nav-horz">left</div>');
 		var right = $('<div id="right" class="nav arrow nav-horz">right</div>');
 		var info = $('<div id="info-trigger" class="nav"></div>');
 		
 		var nav = up.add(down).add(left).add(right);
-		if(mobile == "")
-		{
-
-		}		
 		nav.add(info).appendTo($('body'));
 
 		var interval;
