@@ -1,10 +1,10 @@
 # Ignore configuration files that may contain sensitive information.
-sites/*/*settings*.php
+*/*settings*.php
 
 # Ignore paths that contain generated content.
 files/
-sites/*/files
-sites/*/private
+*/files
+*/private
 
 # Ignore default text files
 robots.txt
@@ -34,3 +34,6 @@ xmlrpc.php
 /profiles
 /scripts
 /themes
+
+#ignore modules
+*/modules/
