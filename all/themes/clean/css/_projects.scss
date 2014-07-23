@@ -249,6 +249,7 @@ div.img-loading{
 	-moz-transform: rotateZ(45deg);
 	-o-transform: rotateZ(45deg);
 }
+$margin: 10px;
 .proj-info{
 	width: 32.5%;
 	left:15.5%;
@@ -269,11 +270,13 @@ div.img-loading{
 			text-decoration: underline;
 		}
 	}
+	p{
+			margin-bottom: 1.5*$margin;
+		}
 	.closed &, .clean &{
 		left: -34%;
 	}
 }
-$margin: 10px;
 .proj-header{
 	position: relative;
 	/*top: -2.3em;*/
@@ -304,9 +307,6 @@ $margin: 10px;
 	.proj-desc-body{
 		.green{
 			color: $brand;
-		}
-		p{
-			margin-bottom: $margin;
 		}
 	}
 }

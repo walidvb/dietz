@@ -573,6 +573,9 @@ div.img-loading {
 .proj-info a:hover {
   text-decoration: underline;
 }
+.proj-info p {
+  margin-bottom: 15px;
+}
 .closed .proj-info, .clean .proj-info {
   left: -34%;
 }
@@ -607,9 +610,6 @@ div.img-loading {
 }
 .proj-body .proj-desc-body .green {
   color: lime;
-}
-.proj-body .proj-desc-body p {
-  margin-bottom: 10px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
