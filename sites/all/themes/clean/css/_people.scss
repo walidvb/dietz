@@ -1,0 +1,23 @@
+.page-studio{
+	.people-item{
+		font-weight: bold;
+		margin-bottom: 15px;
+		h2, .people-title, .people-desc{
+			line-height: 1.42;
+			font-size: inherit;
+			@media #{$tablet}
+			{
+				//font-size: 2.17em;
+			}
+			font-weight: bold;
+		}
+		h2, .people-title{
+			
+			float: left;
+			margin: 0;
+		}
+		.people-desc{
+			display: inline-block;
+		}
+	}
+}

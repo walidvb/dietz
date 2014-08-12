@@ -1,0 +1,16 @@
+$brand: #00FF00;
+$mobile: "(max-width:767px)";
+$tablet: "(min-width:767px)";
+$md: "(min-width:991px)";
+$lg: "(min-width:1200px)";
+
+$font-size: 14px;
+$big-font: 26px;
+body{
+	line-height: 1.42;
+	font-size: $font-size;
+}
+@import "landing";
+@import "layout";
+@import "projects";
+@import "people";

@@ -1,0 +1,3 @@
+.git
+sites/default/files/styles
+cache

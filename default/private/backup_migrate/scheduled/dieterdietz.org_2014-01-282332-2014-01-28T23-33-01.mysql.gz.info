@@ -1,8 +1,0 @@
-filename = "dieterdietz.org_2014-01-282332-2014-01-28T23-33-01"
-description = ""
-datestamp = "1390948382"
-generator = "Backup and Migrate (http://drupal.org/project/backup_migrate)"
-generatorversion = "7.x-2.x"
-sites[0][version] = "7.21"
-sites[0][name] = "dieterdietz.org"
-sites[0][url] = "http://www.dieterdietz.org/"
