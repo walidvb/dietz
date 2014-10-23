@@ -1,11 +1,11 @@
 .text-page{
 	font-size: $big-font;
 	#main-wrapper{
-		padding: 0px 10px;
+		padding: 0px 15px;
 		@media #{$tablet}
 		{
-			padding: 0px 15px 0px 7px;
-		  max-width: 1170px;
+			padding: 0px 20px 0px 15px;
+		  //max-width: 1170px;
 		}
 	}
 	#main-wrapper{

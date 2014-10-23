@@ -88,7 +88,6 @@ body.page-projects{
 	/* work row */
 	.work-table{
 		font-size: 16px;
-		font-weight: bold;
 		& thead{
 			background-color: white;
 			border: none;
@@ -203,6 +202,10 @@ div.img-loading{
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	img{
+		cursor: zoom-out;
+		cursor: -webkit-zoom-out;
+	}
 }
 .img-final{
 	-webkit-transition: left 0.5s;
