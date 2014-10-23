@@ -1,0 +1,34 @@
+.text-page{
+	font-size: $big-font;
+	#main-wrapper{
+		padding: 0px 15px;
+		@media #{$tablet}
+		{
+			padding: 0px 20px 0px 15px;
+		  //max-width: 1170px;
+		}
+	}
+	#main-wrapper{
+		font-size: 10px;
+		@media #{$tablet}
+		{
+			font-size: 26px;
+		}
+	}
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+	.text-page{
+		padding: 0px 20px 28px 28px;		
+	}
+}
+
+html, body, #page-wrapper{
+	height:	100%;
+}
+
+#page-wrapper{
+	-webkit-overflow-scrolling: touch;
+	overflow: auto;
+}
