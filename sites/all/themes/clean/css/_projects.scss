@@ -13,7 +13,9 @@ body.page-projects{
 .page-projects #page-wrapper{
 	position: absolute;
 }
-
+.cycle-slide{
+	will-change: true;
+}
 
 /* CLEAN */
 .clean{ 
@@ -224,7 +226,7 @@ div.img-loading{
 	height: 20px;
 	display: inline-block;
 	transition: all 0.5s ease-out 0s;
-	transform: translateX(calc(48vw)) rotateZ(0deg) ;
+	transform: translateX(calc(48vw)) rotateZ(0deg);
 	background-image: url('../img/cross.png');
 	background-size: contain;
 }
@@ -236,7 +238,7 @@ $margin: 10px;
 .proj-info{
 	width: 32.5%;
 	transform: translateX(45%);
-	transform: translateX(calc(15.5vw));
+	transform: translateX(15.5vw);
 	position: absolute;
 	z-index: 900;
 	top: 0;
@@ -255,8 +257,7 @@ $margin: 10px;
 			margin-bottom: 1.5*$margin;
 		}
 	.closed &, .clean &{
-		transform: translateX(-100%);
-		transform: translateX(calc(-35vw));
+		transform: translateX(-35vw)!important;
 	}
 }
 .proj-header{
@@ -302,12 +303,12 @@ and (max-width : 1024px) {
 	}
 
 	.closed .proj-info, .clean .proj-info{
-		transform: translateX(50vw);
-		transform: translateX(calc(50vw)) ;
+		transform: translateX(-34%)!important;
+		transform: translateX(-47vw)!important;
 	}
 
 	#info-trigger{
-		transform: translateX(calc(47vw)) rotateZ(0deg);
+		transform: translateX(58.5vw) rotateZ(0deg);
 	}
 
 }
@@ -328,7 +329,7 @@ and (max-width : 1024px) {
 
 	.closed .proj-info, .clean .proj-info{
 		top: -53%;
-		left: 0;
+		transform: translateX(calc(0vw)) rotateZ(0deg);
 
 	}
 	.views-row:not(.closed) .proj-wrapper{
@@ -337,7 +338,7 @@ and (max-width : 1024px) {
 	}
 	#info-trigger{
 		top: 53%;
-		left: 5%;
+		transform: translateX(calc(5vw)) rotateZ(45deg);
 	}
 
 	#info-trigger.closed{
